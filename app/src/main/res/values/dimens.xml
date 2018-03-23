@@ -1,0 +1,18 @@
+<!--
+  ~ Libit保留所有版权，如有疑问联系QQ：308062035
+  ~ Copyright (c) 2016.
+  -->
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_setting_relativeLayout_h">51.0dp</dimen>
+    <dimen name="margin0">0.0dp</dimen>
+    <dimen name="margin5">5.0dp</dimen>
+    <dimen name="margin10">10.0dp</dimen>
+    <dimen name="margin15">15.0dp</dimen>
+    <dimen name="margin20">20.0dp</dimen>
+    <dimen name="textsize18">18.0sp</dimen>
+    <dimen name="line_h">1.0dp</dimen>
+    <dimen name="line_w">1.0dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_disable_hide_app"
+        android:orderInCategory="101"
+        android:title="@string/action_hide_app"/>
+    <item
+        android:id="@+id/action_disable_enable"
+        android:orderInCategory="102"
+        android:title="@string/action_enable"/>
+    <item
+        android:id="@+id/action_disable_enable_and_del"
+        android:orderInCategory="103"
+        android:title="@string/action_disable_enable_and_del"/>
+    <item
+        android:id="@+id/action_disable_uninstall"
+        android:orderInCategory="104"
+        android:title="@string/action_uninstall"/>
+    <item
+        android:id="@+id/action_disable_create_desktop_icon"
+        android:orderInCategory="105"
+        android:title="@string/action_create_desktop_icon"/>
+</menu>

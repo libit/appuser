@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Libit保留所有版权，如有疑问联系QQ：308062035
+  ~ Copyright (c) 2017.
+  -->
+<resource>
+    <external-path
+        name="cache"
+        path="libit/appuser/update"/>
+</resource>

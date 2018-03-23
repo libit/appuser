@@ -1,0 +1,23 @@
+<!--
+  ~ Libit保留所有版权，如有疑问联系QQ：308062035
+  ~ Copyright (c) 2016.
+  -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_start_app"
+        android:orderInCategory="102"
+        android:title="@string/action_enable"/>
+    <item
+        android:id="@+id/action_close_app"
+        android:orderInCategory="103"
+        android:title="@string/action_close_app"/>
+    <item
+        android:id="@+id/action_disable_app"
+        android:orderInCategory="103"
+        android:title="@string/action_disable"/>
+    <item
+        android:id="@+id/action_uninstall_app"
+        android:orderInCategory="104"
+        android:title="@string/action_uninstall"/>
+</menu>

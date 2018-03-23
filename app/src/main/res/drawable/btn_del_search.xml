@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Libit保留所有版权，如有疑问联系QQ：308062035
+  ~ Copyright (c) 2016.
+  -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_btn_del_search_pressed" android:state_focused="true"/>
+    <item android:drawable="@drawable/ic_btn_del_search_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_btn_del_search_normal"/>
+</selector>

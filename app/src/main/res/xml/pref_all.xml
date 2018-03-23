@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:fragment="cn.lrapps.android.ui.ActivityPreferenceSettings$GeneralPreferenceFragment"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/pref_header_general">
+    </PreferenceScreen>
+    <!--<Preference
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:key="preference_general"
+        android:layout="@xml/pref_general"
+        android:selectable="true"
+        android:layout_title="@string/pref_header_general"></Preference>-->
+    <Preference
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:key="preference_backup_and_restore"
+        android:selectable="true"
+        android:title="@string/pref_header_backup"></Preference>
+</PreferenceScreen>

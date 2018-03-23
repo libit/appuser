@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66aa66</color>
+    <color name="colorPrimaryDark">#66aa66</color>
+    <color name="colorAccent">#448aff</color>
+    <color name="bg_normal">#666666</color>
+    <color name="bg_pressed">#dddddd</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="setting_gray">#ffaaaaaa</color>
+    <color name="setting_white">#fff5f5f5</color>
+    <color name="line">#88c4c4c4</color>
+    <color name="line_height">#88eeebeb</color>
+    <color name="app_list_bg">#ffffffff</color>
+    <color name="bg_section_pressed">#b7b2b2</color>
+    <color name="red">#ffff0000</color>
+</resources>

@@ -1,0 +1,34 @@
+<!--
+  ~ Libit保留所有版权，如有疑问联系QQ：308062035
+  ~ Copyright (c) 2017.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="cn.lrapps.android.ui.ActivityUnInstallAppBat">
+    <item
+        android:id="@+id/action_select_all"
+        android:orderInCategory="100"
+        android:title="@string/action_select_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_select_none"
+        android:orderInCategory="100"
+        android:title="@string/action_select_none"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_all_app"
+        android:orderInCategory="100"
+        android:title="@string/action_select_all_apps"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_system_app"
+        android:orderInCategory="100"
+        android:title="@string/action_select_system"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_user_app"
+        android:orderInCategory="100"
+        android:title="@string/action_select_user"
+        app:showAsAction="never"/>
+</menu>

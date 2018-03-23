@@ -1,0 +1,36 @@
+<!--
+  ~ Libit保留所有版权，如有疑问联系QQ：308062035
+  ~ Copyright (c) 2017.
+  -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_all_hide_app"
+        android:orderInCategory="101"
+        android:title="@string/action_hide_app"/>
+    <item
+        android:id="@+id/action_all_disable"
+        android:orderInCategory="102"
+        android:title="@string/action_disable"/>
+    <item
+        android:id="@+id/action_all_enable"
+        android:orderInCategory="103"
+        android:title="@string/action_enable"/>
+    <item
+        android:id="@+id/action_del_black"
+        android:orderInCategory="103"
+        android:title="@string/action_del_black"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_all_enable_and_del"
+        android:orderInCategory="104"
+        android:title="@string/action_disable_enable_and_del"/>
+    <item
+        android:id="@+id/action_all_uninstall"
+        android:orderInCategory="105"
+        android:title="@string/action_uninstall"/>
+    <item
+        android:id="@+id/action_all_create_desktop_icon"
+        android:orderInCategory="106"
+        android:title="@string/action_create_desktop_icon"/>
+</menu>

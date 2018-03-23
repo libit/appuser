@@ -1,0 +1,7 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:key="preference_backup_and_restore"
+        android:selectable="true"
+        android:title="@string/pref_header_backup"></Preference>
+</PreferenceScreen>
