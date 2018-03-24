@@ -65,7 +65,7 @@ public class ActivitySplash extends Activity
 		setContentView(rootView);
 		if (AppFactory.isCompatible(23))
 		{
-			ActivitySplashPermissionsDispatcher.initViewWithCheck(this);
+			ActivitySplashPermissionsDispatcher.initViewWithPermissionCheck(this);
 		}
 		else
 		{

@@ -257,7 +257,7 @@ public class ActivitySettingsUi extends MyBaseActivity implements View.OnClickLi
 			{
 				if (AppFactory.isCompatible(23))
 				{
-					ActivitySettingsUiPermissionsDispatcher.showFloatBallWithCheck(ActivitySettingsUi.this);
+					ActivitySettingsUiPermissionsDispatcher.showFloatBallWithPermissionCheck(ActivitySettingsUi.this);
 				}
 				else
 				{
@@ -269,7 +269,7 @@ public class ActivitySettingsUi extends MyBaseActivity implements View.OnClickLi
 			{
 				if (AppFactory.isCompatible(23))
 				{
-					ActivitySettingsUiPermissionsDispatcher.showFloatBallValueWithCheck(ActivitySettingsUi.this);
+					ActivitySettingsUiPermissionsDispatcher.showFloatBallValueWithPermissionCheck(ActivitySettingsUi.this);
 				}
 				else
 				{
