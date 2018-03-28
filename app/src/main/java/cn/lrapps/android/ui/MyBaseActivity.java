@@ -57,7 +57,7 @@ public class MyBaseActivity extends SwipeBackActivity
 			LogcatTools.error("viewInit", "获取ActionBar失败！");
 		}
 		//设置滑动返回区域
-		getSwipeBackLayout().setEdgeSize(DisplayTools.getWindowWidth(this) / 2);
+		getSwipeBackLayout().setEdgeSize(DisplayTools.getWindowWidth(this) / 6);
 	}
 
 	/**

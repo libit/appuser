@@ -29,13 +29,15 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.external.xlistview.XListView;
-import cn.lrapps.android.ui.customer.ToastView;
-import cn.lrapps.android.ui.dialog.DialogFileList;
 import com.lrcall.appuser.R;
-import cn.lrapps.utils.ConstValues;
-import cn.lrapps.utils.StringTools;
 
 import java.io.File;
+
+import cn.lrapps.android.ui.customer.ToastView;
+import cn.lrapps.android.ui.dialog.DialogFileList;
+import cn.lrapps.utils.ConstValues;
+import cn.lrapps.utils.StringTools;
+import cn.lrapps.utils.viewtools.DisplayTools;
 
 public class ActivityWebView extends MyBaseActivity implements XListView.IXListViewListener
 {
@@ -92,6 +94,8 @@ public class ActivityWebView extends MyBaseActivity implements XListView.IXListV
 	{
 		super.viewInit();
 		setBackButton();
+		//设置滑动返回区域
+		getSwipeBackLayout().setEdgeSize(DisplayTools.getWindowWidth(this) / 20);
 		layoutWeb = (FrameLayout) findViewById(R.id.layout_web);
 		xListView = (XListView) findViewById(R.id.xlist);
 		headView = LayoutInflater.from(this).inflate(R.layout.activity_web_view_head, null);

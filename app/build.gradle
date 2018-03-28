@@ -9,7 +9,7 @@ android {
         applicationId "com.lrcall.appuser"
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 2400
+        versionCode 2401
         versionName "2.4.0"
 //        ndk {
 //            moduleName "lrsdk"
