@@ -13,16 +13,17 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.external.xlistview.XListView;
-import cn.lrapps.android.ui.adapter.FontInfoAdapter;
 import com.lrcall.appuser.R;
-import cn.lrapps.models.FontInfo;
-import cn.lrapps.utils.ConstValues;
-import cn.lrapps.utils.LogcatTools;
-import cn.lrapps.utils.filetools.FileTools;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.lrapps.android.ui.adapter.FontInfoAdapter;
+import cn.lrapps.models.FontInfo;
+import cn.lrapps.utils.ConstValues;
+import cn.lrapps.utils.LogcatTools;
+import cn.lrapps.utils.filetools.FileTools;
 
 public class ActivityFontManage extends MyBasePageActivity implements View.OnClickListener
 {
@@ -79,7 +80,7 @@ public class ActivityFontManage extends MyBasePageActivity implements View.OnCli
 			{
 				super.run();
 				mFontInfoList.clear();
-				search(FileTools.getUserDir("/"), fontInfoList);
+				search(FileTools.getUserDir(""), fontInfoList);
 				mHandler.post(new Runnable()
 				{
 					@Override
