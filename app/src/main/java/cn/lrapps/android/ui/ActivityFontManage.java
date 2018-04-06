@@ -19,8 +19,13 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.lrapps.android.ui.adapter.BaseUserAdapter;
 import cn.lrapps.android.ui.adapter.FontInfoAdapter;
+import cn.lrapps.android.ui.adapter.FuncHAdapter;
+import cn.lrapps.android.ui.customer.ToastView;
+import cn.lrapps.android.ui.dialog.DialogList;
 import cn.lrapps.models.FontInfo;
+import cn.lrapps.models.FuncInfo;
 import cn.lrapps.utils.ConstValues;
 import cn.lrapps.utils.LogcatTools;
 import cn.lrapps.utils.filetools.FileTools;
@@ -172,6 +177,47 @@ public class ActivityFontManage extends MyBasePageActivity implements View.OnCli
 						intent.putExtra(ConstValues.DATA_FONT_URL, fontInfo.getUrl());
 						ActivityFontManage.this.startActivity(intent);
 					}
+				}
+
+				@Override
+				public boolean onItemLongClicked(View v, final FontInfo fontInfo)
+				{
+					List<FuncInfo> funcInfoList = new ArrayList<>();
+					funcInfoList.add(new FuncInfo(null, "删除"));
+					FuncHAdapter adapter = new FuncHAdapter(ActivityFontManage.this, funcInfoList, null);
+					final DialogList dialogList = new DialogList(ActivityFontManage.this, adapter);
+					adapter.setiItemClick(new BaseUserAdapter.IItemClick<FuncInfo>()
+					{
+						@Override
+						public void onItemClicked(FuncInfo funcInfo)
+						{
+							if (funcInfo.getName().equals("删除"))
+							{
+								File file = new File(fontInfo.getUrl());
+								if (file.isFile())
+								{
+									boolean isSuccess = file.delete();
+									if (isSuccess)
+									{
+										mFontInfoList.remove(fontInfo);
+										mFontInfoAdapter.notifyDataSetChanged();
+										ToastView.showCenterToast(ActivityFontManage.this, R.drawable.ic_done, "删除字体成功！");
+									}
+									else
+									{
+										ToastView.showCenterToast(ActivityFontManage.this, R.drawable.ic_do_fail, "删除字体失败！");
+									}
+								}
+								else
+								{
+									ToastView.showCenterToast(ActivityFontManage.this, R.drawable.ic_do_fail, "目录不能删除！");
+								}
+							}
+							dialogList.dismiss();
+						}
+					});
+					dialogList.show();
+					return true;
 				}
 			};
 			mFontInfoAdapter = new FontInfoAdapter(this, mFontInfoList, iItemClick);

@@ -12,9 +12,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.lrcall.appuser.R;
-import cn.lrapps.models.FontInfo;
 
 import java.util.List;
+
+import cn.lrapps.models.FontInfo;
 
 /**
  * Created by libit on 15/8/29.
@@ -85,6 +86,14 @@ public class FontInfoAdapter extends BaseUserAdapter<FontInfo>
 							iItemClick.onItemClicked(v, fontInfo);
 						}
 					});
+					convertView.setOnLongClickListener(new View.OnLongClickListener()
+					{
+						@Override
+						public boolean onLongClick(View v)
+						{
+							return iItemClick.onItemLongClicked(v, fontInfo);
+						}
+					});
 				}
 			}
 		}
@@ -94,6 +103,8 @@ public class FontInfoAdapter extends BaseUserAdapter<FontInfo>
 	public interface IItemClick
 	{
 		void onItemClicked(View v, FontInfo fontInfo);
+
+		boolean onItemLongClicked(View v, FontInfo fontInfo);
 	}
 
 	public static class WxSendMsgLogInfoViewHolder
